@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 * {
     font-family: 'Mulish', sans-serif;
@@ -18,6 +19,22 @@
     padding: 10px 25px;
 }
 
+.common-text {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.common-title {
+    color: #131318;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
 /* header style*/
 header {
     max-width: 1000px;
@@ -35,6 +52,7 @@ nav {
 .nav-icon {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 nav ul {
@@ -72,6 +90,10 @@ nav ul a {
     font-weight: 700;
 }
 
+.hide-btn {
+    display: none;
+}
+
 
 /* banner section style*/
 .banner {
@@ -99,7 +121,7 @@ nav ul a {
 }
 
 .banner-description {
-    color: #FFF;    
+    color: #FFF;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -107,6 +129,7 @@ nav ul a {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
 select {
     color: rgba(19, 19, 24, 0.50);
     background-color: #fff;
@@ -116,8 +139,9 @@ select {
     font-weight: 700;
     height: 50px;
     width: 9rem;
-  }
-  input[type="text"] {
+}
+
+input[type="text"] {
     border: none;
     color: rgba(19, 19, 24, 0.50);
     background: #FFF;
@@ -127,9 +151,8 @@ select {
     text-align: left;
     font-size: 1rem;
     font-weight: 700;
-    
-
 }
+
 .serech-btn {
     border-radius: 8px;
     background: #FF5400;
@@ -148,4 +171,200 @@ select {
     padding: 16px;
     align-items: flex-start;
     gap: 24px;
+}
+/* main section style*/
+main{
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+/* our tour section style*/
+
+.tour-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.tour-info ul li {
+    text-indent: 0;
+    list-style-position: inside;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.tour-info p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* footer section style*/
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.footer-info {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.web-title {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.footer-description {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+i {
+    margin-right: 2rem;
+}
+
+.social-links {
+    margin-bottom: 2rem;
+}
+
+hr {
+    margin-bottom: 2rem;
+}
+
+.footer-container p {
+    color: #131318;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+/* responsive layout*/
+
+/* for mobile devies*/
+
+@media screen and (max-width: 600px) {
+
+    header, main {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .hide-btn {
+        display: inline-flex;
+        border: none;
+    }
+
+    .nav-title {
+        color: #131318;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .nav-title>span {
+        color: #FF5400;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .banner-info {
+        padding: 2rem 0.6rem;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .banner-info-text {
+        padding: 0px 10px;
+    }
+
+    .find-places {
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    input[type="text"] {
+        width: 18rem;
+        margin-bottom: 1rem;
+    }
+
+    select {
+        width: 18rem;
+        margin-bottom: 1rem;
+    }
+
+    .serech-btn {
+        width: 18rem;
+    }
+
+    /* our tour section style*/
+
+    .tour-container{
+        flex-direction: column;
+    }
+    .tour-image-container img{
+        width: 100%;
+    }
+
+    /* for footer*/
+
+    .footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-container p {
+        color: #131318;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.7rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .web-title {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center
+    }
+
+
 }
