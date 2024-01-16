@@ -296,6 +296,36 @@ main {
     margin-top: 20px;
 }
 
+/* reviews section style*/
+.meet-our-customer {
+    margin-top: 50px;
+}
+
+.review-section {
+    background: blueviolet;
+    padding: 5% 20%;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.customer-info-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.customer-info {
+    padding: 30px;
+
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(11, 11, 11, 0.256);
+}
+
+.customer-info img {
+    border-radius: 50%;
+}
+
 
 /* newsletter section style*/
 
@@ -368,8 +398,8 @@ main {
     padding: 30px;
     transform: rotate(-22deg);
     position: relative;
-    bottom: 160px;
-    left: 220px;
+    bottom: 38%;
+    left: 45%;
 }
 
 .savings-badge h2 {
@@ -452,8 +482,13 @@ hr {
 
     header,
     main {
-        padding-left: 20px;
-        padding-right: 20px;
+        max-width: 320px;
+        margin: 50px auto;
+
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
 
     }
 
@@ -482,9 +517,6 @@ hr {
         padding: 2rem 0.6rem;
     }
 
-    .banner-title {
-        font-size: 1.5rem;
-    }
 
     .banner-info-text {
         padding: 0px 10px;
@@ -493,21 +525,21 @@ hr {
     .find-places {
         display: inline-block;
         text-align: center;
-
+        padding: 2%;
     }
 
     input[type="text"] {
-        width: 18rem;
+        width: 100%;
         margin-bottom: 1rem;
     }
 
     select {
-        width: 18rem;
+        width: 100%;
         margin-bottom: 1rem;
     }
 
     .serech-btn {
-        width: 18rem;
+        width: 100%;
     }
 
     /* our tour section style*/
@@ -545,6 +577,17 @@ hr {
         padding: 0px 20px;
     }
 
+    /*review-section*/
+    .review-section {
+
+        padding: 5% 5%;
+
+    }
+
+    .customer-info-container {
+        flex-direction: column;
+    }
+
     /*for newsletter  section*/
 
     .newsletter-container {
@@ -555,7 +598,7 @@ hr {
         padding: 20px;
         position: relative;
         bottom: 140px;
-        left: 90px;
+        left: 22%;
     }
 
     /* for footer*/
@@ -582,5 +625,66 @@ hr {
         align-items: center
     }
 
+
+}
+/* for laptop and desktop*/
+@media screen and (min-width: 992px) {
+
+    header,
+    main {
+        max-width: 850px;
+        margin: 50px auto;
+
+    }
+    .banner-title {
+        
+        font-size: 2.5rem;
+    }
+    .banner-info {
+        padding: 5rem;
+    }
+
+    /* Tours plans section*/
+    .tour-image-container img {
+        width: 100%;
+        height: 100%;
+    }
+    .tour-image-container {
+        max-width: 50%;
+    }
+    .tour-info {
+        max-width: 45%;
+    }
+
+
+    /* destination section*/
+    .destination-info {
+        padding: 30px 150px;
+    }
+
+    /*Choose section*/
+    .facility-info-container-2 {
+        margin-top: 40px;
+    }
+    .facility-info {
+        padding: 0 120px;
+    }
+    .hotel-facility {
+        max-width: 40%;
+    }
+    
+    .service-facility {
+        max-width: 40%;
+    }
+    
+    .price-facility {
+        max-width: 40%;
+    }
+
+    /*newsletter section*/
+    .savings-badge {
+        bottom: 38%;
+        left: 33%;
+    }
 
 }
