@@ -197,7 +197,7 @@ main {
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+
 }
 
 .tour-info p {
@@ -297,6 +297,14 @@ main {
 }
 
 /* reviews section style*/
+.duble-comma{
+    width: 30px;
+    height: 30px;
+}
+.profile-pic{
+    display: flex;
+    justify-content: space-between;
+}
 .meet-our-customer {
     margin-top: 50px;
 }
@@ -326,24 +334,98 @@ main {
     border-radius: 50%;
 }
 
+/*deals and discount section*/
+.deals-info {
+    text-align: center;
+    padding: 5% 15%;
+}
+
+.place-1 {
+    border-radius: 16px;
+    background: url(../Images/Group39.png), lightgray 50% / cover no-repeat;
+    padding: 5% 5% 5% 0;
+    display: grid;
+    place-items: end;
+    margin-bottom: 40px;
+
+}
+
+.place-info {
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    width: 50%;
+    padding: 40px 30px;
+}
+
+.place-info>div span {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+}
+
+.place-info>p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.place-2 {
+    border-radius: 16px;
+    background: url(../Images/Group40.png), lightgray 50% / cover no-repeat;
+    padding: 5% 0 5% 5%;
+    margin-bottom: 40px;
+    display: grid;
+    place-items:left;
+
+}
+
+.place-3 {
+    border-radius: 16px;
+    background: url(../Images/Group39.png), lightgray 50% / cover no-repeat;
+    padding: 5% 5% 5% 0;
+    display: grid;
+    place-items: end;
+    margin-bottom: 40px;
+}
+
+.see-all {
+    text-align: center;
+}
+
+.red-text {
+    color: #FF5400;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
 /*perfect-video section*/
-.perfect-video{
+.perfect-video {
     display: flex;
     gap: 20px;
     margin-top: 50px;
 }
-.video-container video{
+
+.video-container video {
     width: 100%;
 }
-.video-description{
+
+.video-description {
     width: 45%;
 }
-.video-description button{
+
+.video-description button {
     margin-top: 10px;
 }
-.video-description h3{
+
+.video-description h3 {
     margin-bottom: 10px;
 }
+
 .video-description ul li {
     text-indent: 0;
     list-style-position: inside;
@@ -351,7 +433,7 @@ main {
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 26px;
+
 }
 
 /* newsletter section style*/
@@ -513,6 +595,9 @@ hr {
         margin: 50px auto;
 
     }
+    .banner {
+        background-position: center;
+    }
 
     .banner-title {
         font-size: 1.5rem;
@@ -600,8 +685,7 @@ hr {
     }
 
     .facility-info {
-
-        padding: 0px 20px;
+        padding: 0;
     }
 
     /*review-section*/
@@ -615,10 +699,54 @@ hr {
         flex-direction: column;
     }
 
+    /* deals and discount*/
+
+    .deals-info {
+        padding: 5% 0%;
+    }
+    .place-info {
+        width: 75%;
+        height: 60%;
+        padding: 40px 30px;
+    }
+
+    .place-info > .newsletter-title {
+        font-size: 1rem;
+    }
+
+    .place-info > .common-text {
+        font-size: 0.7rem;
+        line-height: 15px;
+    }
+    .place-info>p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .red-text {
+        font-size: 13px;
+    }
+    .place-1{
+        align-content: end;
+        height: 400px;
+        background-position: center;
+    }
+    .place-2 {
+        align-content: end;
+        height: 400px;
+        padding: 5% 0 0% 5%;
+        background-position: center;
+    }
+    .place-3 {
+        align-content: end;
+        height: 400px;
+        background-position: center;
+    }
     /*perfect-video section*/
     .perfect-video {
         flex-direction: column;
     }
+
     .video-description {
         width: 100%;
     }
@@ -662,6 +790,7 @@ hr {
 
 
 }
+
 /* for laptop and desktop*/
 @media screen and (min-width: 992px) {
 
@@ -671,10 +800,12 @@ hr {
         margin: 50px auto;
 
     }
+
     .banner-title {
-        
+
         font-size: 2.5rem;
     }
+
     .banner-info {
         padding: 5rem;
     }
@@ -684,9 +815,11 @@ hr {
         width: 100%;
         height: 100%;
     }
+
     .tour-image-container {
         max-width: 50%;
     }
+
     .tour-info {
         max-width: 45%;
     }
@@ -701,24 +834,28 @@ hr {
     .facility-info-container-2 {
         margin-top: 40px;
     }
+
     .facility-info {
         padding: 0 120px;
     }
+
     .hotel-facility {
         max-width: 40%;
     }
-    
+
     .service-facility {
         max-width: 40%;
     }
-    
+
     .price-facility {
         max-width: 40%;
     }
+
     /*perfect video section*/
     .perfect-video {
         align-items: center;
     }
+
     .video-container video {
         width: 100%;
     }
