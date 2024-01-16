@@ -205,6 +205,45 @@ main {
     margin-bottom: 10px;
 }
 
+/* destination section style*/
+.destination{
+    margin-top: 50px;
+}
+
+.destination-info {
+    text-align: center;
+    padding: 30px 200px;
+
+}
+
+.img-size {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    height: 300px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
+.pic-1 {
+    position: relative;
+    text-align: center;
+    bottom: 160px;
+}
+
+.pic-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
 /* newsletter section style*/
 
 .newsletter-container {
@@ -287,6 +326,7 @@ main {
     font-weight: 800;
     line-height: normal;
 }
+
 
 
 /* footer section style*/
@@ -425,6 +465,18 @@ hr {
 
     .tour-image-container img {
         width: 100%;
+    }
+    /*for destination section*/
+
+    .destination-info {
+        padding: 30px 10px;
+    }
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .pic-1 {
+        bottom: 120px;
     }
 
     /*for newsletter  section*/
