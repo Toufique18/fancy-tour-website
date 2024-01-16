@@ -206,7 +206,7 @@ main {
 }
 
 /* destination section style*/
-.destination{
+.destination {
     margin-top: 50px;
 }
 
@@ -243,6 +243,59 @@ main {
     font-weight: 800;
     line-height: normal;
 }
+
+/*choose section style*/
+.choose-us {
+    margin-top: 50px;
+}
+
+.facility-info {
+    text-align: center;
+    padding: 0 200px;
+}
+
+
+
+.hotel-facility {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 30px;
+    text-align: left;
+    max-width: 490px;
+}
+
+.service-facility {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 30px;
+    text-align: left;
+    max-width: 490px;
+}
+
+.price-facility {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 30px;
+    text-align: left;
+    max-width: 490px;
+}
+
+.facility-info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.facility-info-container-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 
 /* newsletter section style*/
 
@@ -466,17 +519,30 @@ hr {
     .tour-image-container img {
         width: 100%;
     }
+
     /*for destination section*/
 
     .destination-info {
         padding: 30px 10px;
     }
-    .row{
+
+    .row {
         flex-direction: column;
         height: auto;
     }
+
     .pic-1 {
         bottom: 120px;
+    }
+
+    /* choose section*/
+    .facility-info-container {
+        flex-direction: column;
+    }
+
+    .facility-info {
+
+        padding: 0px 20px;
     }
 
     /*for newsletter  section*/
